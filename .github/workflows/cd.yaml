@@ -13,9 +13,9 @@ env:
 jobs:
   server:
     runs-on: ubuntu-latest
+    
     if: github.ref == 'refs/heads/main'
-    needs:
-      - client
+
 
     steps:
     - name: Clone
